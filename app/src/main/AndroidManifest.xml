@@ -11,33 +11,42 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Daily_Mood_Journal">
+
+        <!-- Launcher / Splash screen -->
         <activity
-            android:name=".activities.MoodHistoryActivity"
+            android:name=".activities.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Login screen -->
+        <activity
+            android:name=".activities.LoginActivity"
+            android:exported="false" />
+
+        <!-- Register screen -->
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:exported="false" />
+
+        <!-- Dashboard -->
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:exported="false" />
+
+        <!-- Mood related screens -->
+        <activity
+            android:name=".activities.AddMoodActivity"
             android:exported="false" />
         <activity
             android:name=".activities.EditMoodActivity"
             android:exported="false" />
         <activity
-            android:name=".activities.AddMoodActivity"
+            android:name=".activities.MoodHistoryActivity"
             android:exported="false" />
-        <activity
-            android:name=".activities.DashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.SplashActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activities.RegisterActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
