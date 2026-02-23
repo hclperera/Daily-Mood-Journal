@@ -44,6 +44,24 @@ public class UserDAO {
         }
         return false;
     }
+
+    // Get User ID by Email
+    public int getUserId(String email) {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+        String query = "SELECT " + DatabaseHelper.COLUMN_USER_ID +
+                " FROM " + DatabaseHelper.TABLE_USERS +
+                " WHERE " + DatabaseHelper.COLUMN_USER_EMAIL + "=?";
+
+        Cursor cursor = db.rawQuery(query, new String[]{email});
+        int id = -1;
+        if (cursor != null && cursor.moveToFirst()) {
+            id = cursor.getInt(0);
+        }
+        cursor.close();
+        db.close();
+        return id;
+    }
+    // Get User Name by Email
     public String getUserNameByEmail(String email) {
         SQLiteDatabase db = dbHelper.getReadableDatabase();
         String query = "SELECT " + DatabaseHelper.COLUMN_USER_NAME +
