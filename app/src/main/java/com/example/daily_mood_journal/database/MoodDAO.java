@@ -16,6 +16,20 @@ public class MoodDAO {
     public MoodDAO(Context context) {
         dbHelper = new DatabaseHelper(context);
     }
+
+    // Add mood
+    public boolean addMood(MoodEntry mood) {
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+        ContentValues values = new ContentValues();
+        values.put(DatabaseHelper.COLUMN_MOOD_USER_ID, mood.getUserId());
+        values.put(DatabaseHelper.COLUMN_MOOD_TYPE, mood.getMoodType());
+        values.put(DatabaseHelper.COLUMN_MOOD_NOTE, mood.getNote());
+        values.put(DatabaseHelper.COLUMN_MOOD_DATE, mood.getDate());
+
+        long result = db.insert(DatabaseHelper.TABLE_MOODS, null, values);
+        db.close();
+        return result != -1;
+    }
     // Get moods by user (most recent first)
     public List<MoodEntry> getMoods(int userId) {
         List<MoodEntry> moods = new ArrayList<>();
@@ -72,4 +86,5 @@ public class MoodDAO {
         db.close();
         return result > 0;
     }
+
 }
