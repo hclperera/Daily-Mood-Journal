@@ -18,7 +18,7 @@
             android:id="@+id/imgLogo"
             android:layout_width="130dp"
             android:layout_height="130dp"
-            android:src="@drawable/Logo"
+            android:src="@drawable/logo"
             android:contentDescription="App Logo"
             android:layout_marginBottom="16dp"
             android:scaleType="fitCenter"
