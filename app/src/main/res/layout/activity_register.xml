@@ -8,12 +8,23 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
+        android:gravity="center_horizontal"
         android:padding="32dp">
 
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@drawable/Logo"
+            android:contentDescription="App Logo"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitCenter"
+            android:elevation="4dp"/>
 
+        <!-- Title -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -25,7 +36,7 @@
             android:layout_marginBottom="24dp"
             android:gravity="center"/>
 
-
+        <!-- Full Name -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -45,7 +56,7 @@
                 android:inputType="textPersonName"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-
+        <!-- Email -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -65,7 +76,7 @@
                 android:inputType="textEmailAddress"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-
+        <!-- Password -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -85,7 +96,7 @@
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-
+        <!-- Confirm Password -->
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -105,7 +116,7 @@
                 android:inputType="textPassword"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-
+        <!-- Register Button -->
         <Button
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
@@ -114,12 +125,11 @@
             android:textColor="#FFFFFF"
             android:text="Register"
             android:textAllCaps="false"
-            android:padding="12dp"
+            android:padding="14dp"
             android:layout_marginBottom="16dp"
-            android:layout_gravity="center"
             android:fontFamily="sans-serif-medium"/>
 
-
+        <!-- Login Redirect -->
         <TextView
             android:id="@+id/tvLoginRedirect"
             android:layout_width="wrap_content"
@@ -127,8 +137,10 @@
             android:text="Already have an account? Login"
             android:textColor="#6200EE"
             android:textSize="14sp"
-            android:layout_gravity="center"
             android:clickable="true"
-            android:focusable="true"/>
+            android:focusable="true"
+            android:layout_marginBottom="16dp"/>
+
     </LinearLayout>
+
 </ScrollView>
