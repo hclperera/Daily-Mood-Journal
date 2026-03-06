@@ -29,6 +29,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     }
 
     @Override
+    public void onConfigure(SQLiteDatabase db) {
+        super.onConfigure(db);
+        db.setForeignKeyConstraintsEnabled(true);
+    }
+
+    @Override
     public void onCreate(SQLiteDatabase db) {
         String CREATE_USERS_TABLE = "CREATE TABLE " + TABLE_USERS + "("
                 + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT,"
