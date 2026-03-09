@@ -52,7 +52,9 @@
                 android:id="@+id/spinnerMood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/mood_array" />
+                android:entries="@array/mood_array"
+                android:padding="12dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Edit Note -->
@@ -71,7 +73,9 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etNote"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:textColorHint="#666666"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Update Mood Button -->
