@@ -2,6 +2,7 @@ package com.example.daily_mood_journal.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
@@ -72,7 +73,20 @@ public class MoodHistoryActivity extends AppCompatActivity {
         }
 
         ArrayAdapter<String> adapter =
-                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, moodStrings);
+                new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, moodStrings){
+                        @Override
+                        public View getView(int position, android.view.View convertView, android.view.ViewGroup parent) {
+                            View view = super.getView(position, convertView, parent);
+                            android.widget.TextView textView = view.findViewById(android.R.id.text1);
+
+                            //Force text color to black
+                            textView.setTextColor(android.graphics.Color.BLACK);
+                            return view;
+                        }
+
+
+
+                };
         listView.setAdapter(adapter);
 
         if (moods.isEmpty()) {

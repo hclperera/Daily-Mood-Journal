@@ -65,7 +65,9 @@
                 android:id="@+id/spinnerMood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:entries="@array/mood_array" />
+                android:entries="@array/mood_array"
+                android:padding="12dp"
+                android:theme="@style/ThemeOverlay.AppCompat.Light" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Optional Note -->
@@ -87,7 +89,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textMultiLine"
-                android:minLines="3"/>
+                android:minLines="3"
+                android:textColor="#000000"
+                android:textColorHint="#666666"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Add Mood Button -->
