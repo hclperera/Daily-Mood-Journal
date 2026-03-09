@@ -47,13 +47,16 @@
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxStrokeColor="#6200EE"
+            app:hintTextColor="#6200EE"
             android:layout_marginBottom="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textEmailAddress"/>
+                android:inputType="textEmailAddress"
+                android:textColor="#000000"
+                android:textColorHint="#666666"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Password -->
@@ -67,13 +70,16 @@
             app:boxCornerRadiusBottomStart="12dp"
             app:boxCornerRadiusBottomEnd="12dp"
             app:boxStrokeColor="#6200EE"
+            app:hintTextColor="#6200EE"
             android:layout_marginBottom="24dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword"/>
+                android:inputType="textPassword"
+                android:textColor="#000000"
+                android:textColorHint="#666666"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- Login Button -->
