@@ -1,4 +1,9 @@
-# 📔 Daily Mood Journal
+<p align="center">
+  <img src="Screenshots/logo.png" alt="Project Logo" width="200"/>
+</p>
+<h1 align="center">
+  Daily Mood Journal
+</h1>
 
 *ICT3214 – Mobile Application Development Group Project*
 
@@ -60,7 +65,7 @@ The main goal of the app is to help users monitor their emotional patterns over 
 ## 🚀 Installation Guide
 
 1. Clone the repository:
-   git clone https://github.com/Abishuuu/Daily-Mood-Journal.git
+   ```git clone https://github.com/Abishuuu/Daily-Mood-Journal.git```
 2. Open the project in Android Studio
 3. Sync Gradle
 4. Run the app on:
