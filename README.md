@@ -48,37 +48,15 @@ The main goal of the app is to help users monitor their emotional patterns over 
 
 ## 📱 Screenshots
 
+| Register | Login | Dashboard |
+|-----------|-----------|--------|
+| <img src="Screenshots/Register_UI.png" width="300"/> | <img src="Screenshots/Login_UI.png" width="300"/> | <img src="Screenshots/Dashboard_UI.png" width="300"/>|
+---
 
-*Login Screen* 
-
-![Login Screen](Screenshots/Login_UI.png)
-
-
-*Registration Screen* 
-
-![Register Screen](Screenshots/Register_UI.png)
-
-
-*Dashboard Screen* 
-
-![Dashboard Screen](Screenshots/Dashboard_UI.png)
-
-*Add Mood Screen* 
-
-![Add Mood](Screenshots/Add_Mood_UI.png)
-
-
-*Edit/Delete Mood Screen* 
-
-![Edit Mood](Screenshots/Edit_Delete_UI.png)
-
-
-*Mood History Screen* 
-
-![Mood History](Screenshots/View_History_UI.png)
-
-
-
+| Add Mood | Edit/Delete Mood | Mood History |
+|-----------|-----------|--------|
+| <img src="Screenshots/Add_Mood_UI.png" width="300"/> | <img src="Screenshots/Edit_Delete_UI.png" width="300"/> | <img src="Screenshots/View_History_UI.png" width="300"/>|
+---
 ## 🚀 Installation Guide
 
 1. Clone the repository:
